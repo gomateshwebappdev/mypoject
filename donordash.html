@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donor Dashboard - Feedwell</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+  <nav class="bg-green-600 p-4 text-white">
+    <h1 class="text-xl font-bold">Feedwell Donor Dashboard</h1>
+  </nav>
+
+  <div class="container mx-auto my-8 p-4 bg-white rounded-lg shadow-md">
+    <h2 class="text-2xl font-semibold mb-4">Welcome, Donor!</h2>
+
+    <!-- Donation History Section -->
+    <section class="mb-8">
+      <h3 class="text-xl font-bold mb-2">Donation History</h3>
+      <table class="min-w-full bg-white border">
+        <thead>
+          <tr>
+            <th class="border px-4 py-2">Date</th>
+            <th class="border px-4 py-2">Food Type</th>
+            <th class="border px-4 py-2">Quantity</th>
+            <th class="border px-4 py-2">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="border px-4 py-2">15 Feb 2025</td>
+            <td class="border px-4 py-2">Rice</td>
+            <td class="border px-4 py-2">10 kg</td>
+            <td class="border px-4 py-2">Completed</td>
+          </tr>
+          <tr>
+            <td class="border px-4 py-2">12 Feb 2025</td>
+            <td class="border px-4 py-2">Vegetables</td>
+            <td class="border px-4 py-2">5 kg</td>
+            <td class="border px-4 py-2">Pending</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Real-time Donation Section -->
+    <section class="mb-8">
+      <h3 class="text-xl font-bold mb-2">Make a New Donation</h3>
+      <form class="bg-gray-50 p-4 rounded shadow-md">
+        <label class="block mb-2 font-bold">Food Type:</label>
+        <input type="text" class="w-full p-2 border rounded mb-4" placeholder="e.g., Rice, Bread">
+
+        <label class="block mb-2 font-bold">Quantity (in kg):</label>
+        <input type="number" class="w-full p-2 border rounded mb-4" placeholder="Enter quantity">
+
+        <button type="submit" class="bg-green-600 text-white py-2 px-4 rounded">Donate Now</button>
+      </form>
+    </section>
+
+    <!-- Pickup Request Section -->
+    <section class="mb-8">
+      <h3 class="text-xl font-bold mb-2">Request Pickup</h3>
+      <form class="bg-gray-50 p-4 rounded shadow-md">
+        <label class="block mb-2 font-bold">Pickup Address:</label>
+        <textarea class="w-full p-2 border rounded mb-4" placeholder="Enter pickup address"></textarea>
+
+        <button type="submit" class="bg-blue-600 text-white py-2 px-4 rounded">Request Pickup</button>
+      </form>
+    </section>
+
+    <!-- Feedback Section -->
+    <section>
+      <h3 class="text-xl font-bold mb-2">Feedback</h3>
+      <form class="bg-gray-50 p-4 rounded shadow-md">
+        <label class="block mb-2 font-bold">Your Feedback:</label>
+        <textarea class="w-full p-2 border rounded mb-4" placeholder="Share your feedback here..."></textarea>
+
+        <button type="submit" class="bg-yellow-600 text-white py-2 px-4 rounded">Submit Feedback</button>
+      </form>
+    </section>
+  </div>
+</body>
+</html>
